@@ -9,3 +9,7 @@ Some facts about my drawing:
  - I added a 'galaxy' in the top left because I thought it would be cool
  - The planet and its details were relatively easy as it is a filled circle with arcs going across it.
  - I used some interesting ways to do colours throughout the project
+
+
+Project 3:
+I did both appendix A and B. I didnt feel like i did enough of my own work on the threat detection training. The Data analysis project is commented but im uploading both anyways
