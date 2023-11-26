@@ -7,11 +7,9 @@
 import numpy as np
 import pandas as pd
 
-
 from scipy.stats import zscore
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import *
-
 
 import io
 import requests
@@ -30,8 +28,6 @@ import seaborn as sns
 import datetime as dt
 
 from sklearn.metrics import accuracy_score, confusion_matrix, precision_score, recall_score, f1_score, roc_auc_score
-
-xtrain, xtest, ytrain, ytest = train_test_split(x,y,test_size=0.25, random_state=42)
 
 path = get_file('kddcup.data_10_percent.gz', 
                 origin='http://kdd.ics.uci.edu/databases/kddcup99/kddcup.data_10_percent.gz')
@@ -159,6 +155,8 @@ outcomelen = len(outcomes)
 y = dummy.values
 
 df.groupby('outcome')['outcome'].count()
+
+xtrain, xtest, ytrain, ytest = train_test_split(x,y,test_size=0.25, random_state=42)
 
 model = Sequential()
 model.add(Dense(10, input_dim = x.shape[1],kernel_initializer='normal', activation = 'relu'))
